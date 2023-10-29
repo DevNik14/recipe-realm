@@ -1,12 +1,10 @@
-import { useState } from 'react'
 import SiteNaviagation from './components/SiteNavigation'
+import './App.css';
 
 function App() {
 
   return (
-    <>
-      <SiteNaviagation/>
-    </>
+    <SiteNaviagation/>
   )
 }
 

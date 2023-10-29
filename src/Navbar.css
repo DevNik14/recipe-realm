@@ -16,21 +16,21 @@ ul, li {
 }
 
 /* Style the left side of the navbar */
-.navbar-left ul {
-  display: flex;
-}
-
-.navbar-left li {
-  margin-right: 15px; /* Adjust spacing between items */
-}
-
-.navbar-left a {
-  text-decoration: none;
-  color: #fff; /* Change the link color to your preference */
-  font-weight: bold;
+.navbar-left img {
+  width: 80px; /* Adjust the logo width as needed */
 }
 
 /* Style the right side of the navbar */
-.navbar-right img {
-  width: 80px; /* Adjust the logo width as needed */
+.navbar-right ul {
+  display: flex;
+}
+
+.navbar-right li {
+  margin-right: 15px; /* Adjust spacing between items */
+}
+
+.navbar-right a {
+  text-decoration: none;
+  color: #fff; /* Change the link color to your preference */
+  font-weight: bold;
 }
