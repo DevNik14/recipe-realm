@@ -10,7 +10,6 @@ ul, li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333; /* Change the background color to your preference */
   color: #fff; /* Change the text color to your preference */
   padding: 10px 20px;
 }
