@@ -1,4 +1,4 @@
-import SiteNaviagation from './components/SiteNavigation'
+import SiteNaviagation from './components/Navbar/SiteNavigation'
 import './App.css';
 
 function App() {
