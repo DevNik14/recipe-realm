@@ -18,7 +18,7 @@ import Button from '@mui/material/Button';
 const drawerWidth = 240;
 const navItems = ['Home', 'About', 'Contact'];
 
-function DrawerAppBar(props) {
+function SiteNavigation(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -60,13 +60,13 @@ function DrawerAppBar(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography
+          {/* <Typography
             variant="h6"
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
             MUI
-          </Typography>
+          </Typography> */}
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
               <Button key={item} sx={{ color: '#fff' }}>
@@ -134,4 +134,4 @@ function DrawerAppBar(props) {
   );
 }
 
-export default DrawerAppBar;
+export default SiteNavigation;

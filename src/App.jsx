@@ -1,10 +1,10 @@
-import DrawerAppBar from './components/Navbar/SiteNavigation'
+import SiteNavigation from './components/Navbar/SiteNavigation'
 import './App.css';
 
 function App() {
 
   return (
-    <DrawerAppBar/>
+    <SiteNavigation/>
   )
 }
 
