@@ -7,10 +7,8 @@ function App() {
 
   return (
     <>
-      <Container>
-        <SiteNavigation />
-        <Hero />
-      </Container>
+      <SiteNavigation />
+      <Hero />
     </>
   )
 }

@@ -1,5 +1,3 @@
-import { Typography } from "@mui/material";
-
 const Hero = () => {
   return (
     <header>
