@@ -1,6 +1,6 @@
 import styles from './Navbar.module.css'
 
-const navItems = ['Home', 'Login'];
+const navItems = ['Home', 'Recipes', 'Login'];
 
 function SiteNavigation() {
   return (
