@@ -1,7 +1,10 @@
 const HomeSearch = () => {
   return (
     <div className="home-search">
-      <input type="text" placeholder="Search for a specific recipes"/>
+      <form className="home-seatch-form">
+        <input type="text" placeholder="Search for a specific recipes" />
+        <input type="button" value="Search"/>
+      </form>
     </div>
   )
 }
