@@ -15,7 +15,7 @@ const TrendingRecipes = () => {
           recipes.length > 0 &&
           <div className="trending-recipes-boxes">
             {recipes.map((recipe, i) => {
-              return <RecipeBox key={`${recipe.title} ${i}`} {...recipe}/>
+              return <RecipeBox key={`${recipe.title} ${i}`} {...recipe} />
             })}
           </div>
         }
