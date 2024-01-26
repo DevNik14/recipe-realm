@@ -7,12 +7,12 @@ ul, li {
 .siteNavigation {
   background-color: #2660A4;
   color: #fff;
+  padding: 25px;
 }
 
 .siteNavigationItems {
   display: flex;
   justify-content: space-between;
-  padding: 30px;
 }
 
 .middle {
