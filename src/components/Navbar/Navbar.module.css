@@ -5,5 +5,20 @@ ul, li {
 }
 
 .siteNavigation {
-  background-color: #134074;
+  background-color: #2660A4;
+  color: #fff;
+}
+
+.siteNavigationItems {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.middle {
+  display: flex;
+}
+
+.middle .siteNavigationItem {
+  margin: 0 10px 0 0;
 }

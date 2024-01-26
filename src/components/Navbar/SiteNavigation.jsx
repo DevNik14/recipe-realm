@@ -4,18 +4,18 @@ const navItems = ['Home', 'Recipes', 'Blog', 'Login'];
 
 const displayNavLinks = (from, to) => {
   return navItems.slice(from, to).map(item => {
-    return <li className="site-navigation-item" key={item}>{item}</li>
+    return <li className={styles.siteNavigationItem} key={item}>{item}</li>
   })
 }
 
 function SiteNavigation() {
   return (
     <nav className={styles.siteNavigation}>
-      <ul className={`site-navigation-items`}>
+      <ul className={styles.siteNavigationItems}>
         <div className="left">
-          <li className="site-navigation-item">Recipe Realm</li>
+          <li className={styles.siteNavigationItem}>Recipe Realm</li>
         </div>
-        <div className="middle">
+        <div className={styles.middle}>
           {displayNavLinks(0, navItems.length - 1)}
         </div>
         <div className="right">
