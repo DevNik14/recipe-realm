@@ -10,6 +10,11 @@ ul, li {
   padding: 25px;
 }
 
+.mobileMenuIcon {
+  display: none;
+  cursor: pointer;
+}
+
 .siteNavigationItems {
   display: flex;
   justify-content: space-between;
@@ -21,4 +26,70 @@ ul, li {
 
 .middle .siteNavigationItem {
   margin: 0 10px 0 0;
+}
+
+@media (width <= 768px) {
+  .middle, .right {
+    display: none;
+  }
+
+  .mobileMenuIcon {
+    width: 35px;
+    height: 30px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+  }
+
+  .mobileMenuIcon span {
+    background: #fff;
+    position: absolute;
+    border-radius: 2px;
+    transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+    width: 100%;
+    height: 4px;
+    transition-duration: 500ms
+  }
+
+  .mobileMenuIcon span:nth-child(1) {
+    top: 0px;
+    left: 0px;
+  }
+
+  .mobileMenuIcon span:nth-child(2) {
+    top: 13px;
+    left: 0px;
+    opacity: 1;
+  }
+
+  .mobileMenuIcon span:nth-child(3) {
+    bottom: 0px;
+    left: 0px;
+  }
+
+  .mobileMenuIcon:not(.open):hover span:nth-child(1) {
+    transform: rotate(0deg) scaleY(1.1);
+  }
+
+  .mobileMenuIcon:not(.open):hover span:nth-child(2) {
+    transform: rotate(0deg) scaleY(1.1);
+  }
+
+  .mobileMenuIcon:not(.open):hover span:nth-child(3) {
+    transform: rotate(0deg) scaleY(1.1);
+  }
+
+  .mobileMenuIcon.open span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 13px;
+  }
+
+  .mobileMenuIcon.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobileMenuIcon.open span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 13px;
+  }
 }
