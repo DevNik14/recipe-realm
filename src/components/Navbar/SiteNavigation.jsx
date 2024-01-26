@@ -11,9 +11,7 @@ function SiteNavigation() {
     })
   }
 
-  const toggleMobileNavigationHandler = () => {
-    setToggleMobileNavigation(oldState => !oldState)
-  }
+  const toggleMobileNavigationHandler = () => setToggleMobileNavigation(oldState => !oldState);
 
   return (
     <nav className={styles.siteNavigation}>
