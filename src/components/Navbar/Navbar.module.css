@@ -15,6 +15,16 @@ ul, li {
   cursor: pointer;
 }
 
+.mobileNavigation {
+  visibility: hidden;
+  right: -100%;
+  position: fixed;
+  background-color: #2660A4;
+  height: 100vh;
+  width: min(75vw, 400px);
+  transition: all 0.3s ease-in;
+}
+
 .siteNavigationItems {
   display: flex;
   justify-content: space-between;
@@ -39,6 +49,7 @@ ul, li {
     cursor: pointer;
     display: inline-block;
     position: relative;
+    z-index: 10;
   }
 
   .mobileMenuIcon span {
@@ -91,5 +102,10 @@ ul, li {
   .mobileMenuIcon.open span:nth-child(3) {
     transform: rotate(-45deg);
     top: 13px;
+  }
+
+  .mobileNavigation.open {
+    visibility: visible;
+    right: 0;
   }
 }

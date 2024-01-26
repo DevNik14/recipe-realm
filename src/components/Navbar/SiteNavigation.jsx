@@ -32,6 +32,13 @@ function SiteNavigation() {
           <span></span>
           <span></span>
         </div>
+        <div className={`${styles.mobileNavigation} ${toggleMobileNavigation && styles.open}`}>
+          <aside>
+            <ul className={styles.mobileNavigationItems}>
+              {toggleMobileNavigation && displayNavLinks(0)}
+            </ul>
+          </aside>
+        </div>
       </ul>
     </nav>
   )
