@@ -3,3 +3,7 @@ ul, li {
   padding: 0;
   list-style: none;
 }
+
+.siteNavigation {
+  background-color: #134074;
+}
