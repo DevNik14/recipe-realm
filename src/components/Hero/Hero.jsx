@@ -13,7 +13,7 @@ const Hero = () => {
           </p>
         </div>
         <div className={styles.heroCtaButtons}>
-          <button>Explore Recipes</button>
+          <button className={styles.heroCta}>Explore Recipes</button>
         </div>
       </div>
     </header>
