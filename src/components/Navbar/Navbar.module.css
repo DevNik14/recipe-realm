@@ -9,6 +9,7 @@ li {
   background-color: #2660A4;
   color: var(--main-color);
   padding: 25px;
+  height: var(--nav-height);
 }
 
 .mobileMenuIcon {
@@ -42,6 +43,10 @@ li {
 .siteNavigationItems {
   display: flex;
   justify-content: space-between;
+}
+
+.siteNavigationItems .left {
+  align-self: center;
 }
 
 .middle {
