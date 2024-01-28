@@ -25,6 +25,7 @@ li {
   height: 100vh;
   width: min(75vw, 400px);
   transition: all 0.3s ease-in;
+  font-family: var(--navigation-font);
 }
 
 .mobileNavigation aside {

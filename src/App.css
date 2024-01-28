@@ -1,10 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 :root {
   --font-size-lg: 18px;
   --main-color: #fff;
   --main-bg-nav-color: #2660A4;
   --nav-height: 80px;
+  --headings-font: "Montserrat", sans-serif;
+  --text-font: "Open Sans", sans-serif;
+  --navigation-font: "Nunito", sans-serif;
 }
 
 body {
   font-size: var(--font-size-lg);
+  font-family: var(--text-font);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--headings-font);
+  font-weight: 900;
 }
