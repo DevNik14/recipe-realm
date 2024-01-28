@@ -2,6 +2,7 @@
 
 :root {
   --font-size-lg: 18px;
+  --font-size-sm: 16px;
   --main-color: #fff;
   --main-bg-nav-color: #2660A4;
   --nav-height: 80px;
@@ -18,4 +19,14 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--headings-font);
   font-weight: 900;
+}
+
+@media (width <= 480px) {
+  body {
+    font-size: var(--font-size-sm);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+  }
 }

@@ -1,3 +1,15 @@
 .heroSection {
-  height: 100vh;
+  height: calc(100vh - var(--nav-height));
+  padding: 0 20px;
+}
+
+.heroContent {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heroContent div {
+  margin-top: 50px;
 }
