@@ -7,7 +7,7 @@ li {
 
 .siteNavigation {
   background-color: #2660A4;
-  color: #fff;
+  color: var(--main-color);
   padding: 25px;
 }
 
@@ -20,7 +20,7 @@ li {
   visibility: hidden;
   right: -100%;
   position: fixed;
-  background-color: #2660A4;
+  background-color: var(--main-bg-nav-color);
   height: 100vh;
   width: min(75vw, 400px);
   transition: all 0.3s ease-in;
@@ -69,7 +69,7 @@ li {
   }
 
   .mobileMenuIcon span {
-    background: #fff;
+    background: var(--main-color);
     position: absolute;
     border-radius: 2px;
     transition: .3s cubic-bezier(.8, .5, .2, 1.4);
