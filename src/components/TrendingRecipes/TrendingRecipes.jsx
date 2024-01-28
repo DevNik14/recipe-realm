@@ -8,7 +8,7 @@ const recipes = [
 
 const TrendingRecipes = () => {
   return (
-    <section className="trending-recipes-home-section">
+    <section className="trending-recipes-home-section maxWdithContainer">
       <div className="trending-recipes-content">
         <h2>Trending Recipes</h2>
         {

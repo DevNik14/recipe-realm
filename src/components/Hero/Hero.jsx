@@ -2,7 +2,7 @@ import styles from './Hero.module.css'
 
 const Hero = () => {
   return (
-    <header className={styles.heroSection}>
+    <header className={`${styles.heroSection} maxWdithContainer`}>
       <div className={styles.heroContent}>
         <div>
           <h1>Discover, Share, and Enjoy Delicious Recipes</h1>
