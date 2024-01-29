@@ -1,10 +1,12 @@
+import styles from './RecipeBox.module.css';
+
 const RecipeBox = ({ title, description, likes }) => {
   return (
-    <article className="trendingRecipeBox">
-      <header className="trendingRecipeBoxHeader">
+    <article className={styles.trendingRecipeBox}>
+      <header className={styles.trendingRecipeBoxHeader}>
         <h3>{title}</h3>
       </header>
-      <div className="recipeDescription">
+      <div className={styles.recipeDescription}>
         <p>{description}</p>
         <p>{likes}</p>
       </div>

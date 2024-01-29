@@ -1,3 +1,9 @@
 .trendingRecipesContent h2 {
-  margin:  50px 0;
+  margin: 50px 0;
+}
+
+.trendingRecipesBoxes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
