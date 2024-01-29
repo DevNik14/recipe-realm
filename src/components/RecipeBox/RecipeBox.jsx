@@ -1,10 +1,10 @@
 const RecipeBox = ({ title, description, likes }) => {
   return (
-    <article className="trending-recipe-box">
-      <header className="trending-recipe-box-header">
+    <article className="trendingRecipeBox">
+      <header className="trendingRecipeBoxHeader">
         <h3>{title}</h3>
       </header>
-      <div className="recipe-description">
+      <div className="recipeDescription">
         <p>{description}</p>
         <p>{likes}</p>
       </div>
