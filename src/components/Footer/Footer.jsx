@@ -1,6 +1,8 @@
+import styles from './Footer.module.css'
+
 const Footer = () => {
   return (
-    <footer className="home-footer footer">
+    <footer className={`${styles.homeFooter} footer maxWdithContainer`}>
       <a href="https://github.com/DevNik14" target="_blank">Designed and Developed by Nikolay Kyurchiyski</a>
     </footer>
   )
