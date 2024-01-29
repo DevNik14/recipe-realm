@@ -8,12 +8,12 @@ const recipes = [
 
 const TrendingRecipes = () => {
   return (
-    <section className="trending-recipes-home-section maxWdithContainer">
-      <div className="trending-recipes-content">
+    <section className="trendingRecipesHomeSection maxWdithContainer">
+      <div className="trendingRecipesContent">
         <h2>Trending Recipes</h2>
         {
           recipes.length > 0 &&
-          <div className="trending-recipes-boxes">
+          <div className="trendingRecipesBoxes">
             {recipes.map((recipe, i) => {
               return <RecipeBox key={`${recipe.title} ${i}`} {...recipe} />
             })}
