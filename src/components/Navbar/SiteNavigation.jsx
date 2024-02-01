@@ -6,9 +6,11 @@ function SiteNavigation() {
   const [toggleMobileNavigation, setToggleMobileNavigation] = useState(false);
   const navItems = ['Home', 'Recipes', 'Blog'];
 
+  const transformHomeLink = (linkText) => linkText == 'Home' ? '/' : linkText;
+
   const displayNavLinks = (from, to) => {
     return navItems.slice(from, to).map(item => {
-      return <li><NavLink to={item} className={styles.siteNavigationItem} key={item}>{item}</NavLink></li>
+      return <li key={item}><NavLink to={transformHomeLink(item)} className={styles.siteNavigationItem}>{item}</NavLink></li>
     })
   }
 
