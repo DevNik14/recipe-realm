@@ -27,7 +27,7 @@ a {
   text-decoration: none;
 }
 
-a:visited {
+.siteNavigationItems a:visited {
   color: var(--main-color);
 }
 

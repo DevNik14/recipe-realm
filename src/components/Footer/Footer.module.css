@@ -1,3 +1,7 @@
+footer a:visited {
+  color: var(--main-bg-nav-color);
+}
+
 .homeFooter {
   text-align: center;
 }
