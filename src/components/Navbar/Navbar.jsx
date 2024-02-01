@@ -26,7 +26,7 @@ function SiteNavigation() {
           {displayNavLinks(0, navItems.length)}
         </div>
         <div className={styles.right}>
-          Login
+          <li className={styles.loginButton}>Login</li>
         </div>
         <div className={`${styles.mobileMenuIcon} ${toggleMobileNavigation && styles.open}`} onClick={toggleMobileNavigationHandler}>
           <span></span>

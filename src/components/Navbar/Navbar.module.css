@@ -12,6 +12,10 @@ li {
   height: var(--nav-height);
 }
 
+.loginButton {
+  cursor: pointer;
+}
+
 .mobileMenuIcon {
   display: none;
   cursor: pointer;
