@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import styles from './Hero.module.css'
 
 const Hero = () => {
@@ -13,7 +14,7 @@ const Hero = () => {
           </p>
         </div>
         <div className={styles.heroCtaButtons}>
-          <button className={styles.heroCta}>Explore Recipes</button>
+          <NavLink to='/recipes' className={styles.heroCta}>Explore Recipes</NavLink>
         </div>
       </div>
     </header>
