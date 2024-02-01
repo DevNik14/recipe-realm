@@ -1,6 +1,8 @@
 const Blog = () => {
   return (
-    <h2>Blog Page</h2>
+    <main className="maxWdithContainer">
+      <h2>Blog Page</h2>
+    </main>
   )
 }
 
