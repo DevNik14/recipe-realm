@@ -1,4 +1,5 @@
-import SiteNavigation from './components/Navbar/SiteNavigation'
+import {Routes, Route} from 'react-router-dom';
+import SiteNavigation from './components/Navbar/SiteNavigation';
 import Hero from './components/Hero/Hero';
 import TrendingRecipes from './components/TrendingRecipes/TrendingRecipes';
 import HomeSearch from './components/HomeSearch/HomeSearch';
@@ -9,6 +10,10 @@ function App() {
 
   return (
     <>
+    <Routes>
+      <Route path='/recipes' element={<h2>Recipes</h2>}/>
+      <Route path='/blog' element={<h2>Blog</h2>}/>
+    </Routes>
       <SiteNavigation />
       <Hero />
       <HomeSearch />
