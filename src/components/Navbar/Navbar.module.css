@@ -9,11 +9,11 @@ li {
   background-color: #2660A4;
   color: var(--main-color);
   padding: 25px;
-  height: var(--nav-height);
 }
 
-.loginButton {
-  cursor: pointer;
+.authNav {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .mobileMenuIcon {
@@ -54,12 +54,12 @@ li {
   align-self: center;
 }
 
-.middle {
+.right {
   display: flex;
 }
 
-.middle .siteNavigationItem {
-  margin: 0 10px 0 0;
+.right .siteNavigationItem, .authItem {
+  margin: 0 0 0 10px;
 }
 
 @media (width <=768px) {
