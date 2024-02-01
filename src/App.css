@@ -22,6 +22,15 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
 }
 
+a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--main-color);
+}
+
 .maxWdithContainer {
   max-width: var(--max-width-container);
   margin: 0 auto;
