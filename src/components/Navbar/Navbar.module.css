@@ -50,22 +50,22 @@ li {
   justify-content: space-between;
 }
 
-.siteNavigationItems .left {
+.siteNavigationItems .logo {
   align-self: center;
 }
 
-.right {
+.menu {
   display: flex;
 }
 
-.right .siteNavigationItem, .authItem {
+.menu .siteNavigationItem, .authItem {
   margin: 0 0 0 10px;
 }
 
 @media (width <=768px) {
 
   .middle,
-  .right {
+  .menu {
     display: none;
   }
 

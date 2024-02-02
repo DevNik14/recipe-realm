@@ -25,10 +25,10 @@ function SiteNavigation() {
         </ul>
       </div>
       <ul className={`${styles.siteNavigationItems}`}>
-        <div className={`${styles.left} logo`}>
+        <div className={`${styles.logo} logo`}>
           <li className={styles.siteNavigationItem}>Recipe Realm</li>
         </div>
-        <div className={styles.right}>
+        <div className={styles.menu}>
           {displayNavLinks(0, navItems.length)}
         </div>
         <div className={`${styles.mobileMenuIcon} ${toggleMobileNavigation && styles.open}`} onClick={toggleMobileNavigationHandler}>
