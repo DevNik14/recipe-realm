@@ -10,11 +10,6 @@ li {
   color: var(--main-color);
 }
 
-.authNav {
-  display: flex;
-  justify-content: flex-end;
-}
-
 .mobileMenuIcon {
   display: none;
   cursor: pointer;
@@ -57,7 +52,7 @@ li {
   display: flex;
 }
 
-.menu .siteNavigationItem, .authItem {
+.menu .siteNavigationItem {
   margin: 0 0 0 10px;
 }
 

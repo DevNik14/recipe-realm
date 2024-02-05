@@ -1,14 +1,12 @@
-import { NavLink } from 'react-router-dom';
 import styles from './AuthBar.module.css'
+import { Nav } from 'react-bootstrap';
 
 const AuthBar = () => {
   return (
-    <div className="auth">
-      <ul className={`${styles.authNav}`}>
-        <li className={`${styles.loginButton} ${styles.authItem}`}><NavLink>Login</NavLink></li>
-        <li className={`${styles.authItem}`}><NavLink>Sign Up</NavLink></li>
-      </ul>
-    </div>
+    <Nav className={`${styles.authNav} auth justify-content-end`}>
+      <Nav.Item className={`${styles.loginButton} ${styles.authItem}`}>Login</Nav.Item>
+      <Nav.Item className={`${styles.authItem}`}>Sign Up</Nav.Item>
+    </Nav>
   )
 }
 
