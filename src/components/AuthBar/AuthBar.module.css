@@ -1,3 +1,10 @@
 .authItem {
   cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.authItem span {
+  display: block;
+  padding: 0.5rem;
 }
