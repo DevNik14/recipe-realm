@@ -12,7 +12,9 @@ function SiteNavigation() {
 
   const displayNavLinks = (from, to) => {
     return navItems.slice(from, to).map(item => {
-      return <Nav.Item as="li" key={item}><NavLink to={transformHomeLink(item)} className={styles.siteNavigationItem}>{item}</NavLink></Nav.Item>
+      return <Nav.Item as="li" key={item}>
+        <NavLink to={transformHomeLink(item)} className={styles.siteNavigationItem}>{item}</NavLink>
+      </Nav.Item>
     })
   }
 
