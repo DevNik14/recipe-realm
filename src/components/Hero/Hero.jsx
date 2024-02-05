@@ -3,7 +3,7 @@ import styles from './Hero.module.css'
 
 const Hero = () => {
   return (
-    <header className={`${styles.heroSection} maxWdithContainer`}>
+    <section className={`${styles.heroSection} maxWdithContainer`}>
       <div className={styles.heroContent}>
         <div>
           <h1>Discover, Share, and Enjoy Delicious Recipes</h1>
@@ -17,7 +17,7 @@ const Hero = () => {
           <NavLink to='/recipes' className={styles.heroCta}>Explore Recipes</NavLink>
         </div>
       </div>
-    </header>
+    </section>
   )
 }
 
