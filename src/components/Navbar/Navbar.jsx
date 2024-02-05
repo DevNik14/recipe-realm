@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import AuthBar from '../AuthBar/AuthBar';
 import styles from './Navbar.module.css'
 
 function SiteNavigation() {
@@ -18,12 +19,7 @@ function SiteNavigation() {
 
   return (
     <nav className={styles.siteNavigation}>
-      <div className="auth">
-        <ul className={`${styles.authNav}`}>
-          <li className={`${styles.loginButton} ${styles.authItem}`}><NavLink>Login</NavLink></li>
-          <li className={`${styles.authItem}`}><NavLink>Sign Up</NavLink></li>
-        </ul>
-      </div>
+      <AuthBar />
       <ul className={`${styles.siteNavigationItems}`}>
         <div className={`${styles.logo} logo`}>
           <li className={styles.siteNavigationItem}>Recipe Realm</li>
