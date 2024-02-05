@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import AuthBar from '../AuthBar/AuthBar';
+import Container from 'react-bootstrap/Container';
 import styles from './Navbar.module.css'
 
 function SiteNavigation() {
@@ -19,27 +20,29 @@ function SiteNavigation() {
 
   return (
     <nav className={styles.siteNavigation}>
-      <AuthBar />
-      <ul className={`${styles.siteNavigationItems}`}>
-        <div className={`${styles.logo} logo`}>
-          <li className={styles.siteNavigationItem}>Recipe Realm</li>
-        </div>
-        <div className={styles.menu}>
-          {displayNavLinks(0, navItems.length)}
-        </div>
-        <div className={`${styles.mobileMenuIcon} ${toggleMobileNavigation && styles.open}`} onClick={toggleMobileNavigationHandler}>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div className={`${styles.mobileNavigation} ${toggleMobileNavigation && styles.open}`}>
-          <aside>
-            <ul className={styles.mobileNavigationItems}>
-              {toggleMobileNavigation && displayNavLinks(0)}
-            </ul>
-          </aside>
-        </div>
-      </ul>
+      <Container>
+        <AuthBar />
+        <ul className={`${styles.siteNavigationItems}`}>
+          <div className={`${styles.logo} logo`}>
+            <li className={styles.siteNavigationItem}>Recipe Realm</li>
+          </div>
+          <div className={styles.menu}>
+            {displayNavLinks(0, navItems.length)}
+          </div>
+          <div className={`${styles.mobileMenuIcon} ${toggleMobileNavigation && styles.open}`} onClick={toggleMobileNavigationHandler}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div className={`${styles.mobileNavigation} ${toggleMobileNavigation && styles.open}`}>
+            <aside>
+              <ul className={styles.mobileNavigationItems}>
+                {toggleMobileNavigation && displayNavLinks(0)}
+              </ul>
+            </aside>
+          </div>
+        </ul>
+      </Container>
     </nav>
   )
 }

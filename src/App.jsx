@@ -4,6 +4,7 @@ import Recipes from './components/Recipes/Recipes';
 import SiteNavigation from './components/Navbar/Navbar';
 import Blog from './components/Blog/Blog';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 

@@ -31,12 +31,6 @@ a {
   color: var(--main-color);
 }
 
-.maxWdithContainer {
-  max-width: var(--max-width-container);
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 @media (width <= 480px) {
   body {
     font-size: var(--font-size-sm);
