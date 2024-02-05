@@ -12,14 +12,14 @@ function SiteNavigation() {
 
   const displayNavLinks = (from, to) => {
     return navItems.slice(from, to).map(item => {
-      return <li key={item}><NavLink to={transformHomeLink(item)} className={styles.siteNavigationItem}>{item}</NavLink></li>
+      return <Nav.Item as="li" key={item}><NavLink to={transformHomeLink(item)} className={styles.siteNavigationItem}>{item}</NavLink></Nav.Item>
     })
   }
 
   const toggleMobileNavigationHandler = () => setToggleMobileNavigation(oldState => !oldState);
 
   return (
-    <nav className={styles.siteNavigation}>
+    <header className={styles.siteNavigation}>
       <Container>
         <AuthBar />
         <Navbar className={`${styles.siteNavigationItems}`}>
@@ -41,7 +41,7 @@ function SiteNavigation() {
           </div>
         </Navbar>
       </Container>
-    </nav>
+    </header>
   )
 }
 
