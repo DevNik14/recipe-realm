@@ -46,6 +46,7 @@ li {
 
 .siteNavigationItems .logo {
   align-self: center;
+  color: var(--main-color)!important;
 }
 
 .menu {

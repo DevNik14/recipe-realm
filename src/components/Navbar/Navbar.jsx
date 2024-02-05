@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import AuthBar from '../AuthBar/AuthBar';
-import Container from 'react-bootstrap/Container';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import styles from './Navbar.module.css'
 
 function SiteNavigation() {
@@ -22,10 +22,8 @@ function SiteNavigation() {
     <nav className={styles.siteNavigation}>
       <Container>
         <AuthBar />
-        <ul className={`${styles.siteNavigationItems}`}>
-          <div className={`${styles.logo} logo`}>
-            <li className={styles.siteNavigationItem}>Recipe Realm</li>
-          </div>
+        <Navbar className={`${styles.siteNavigationItems}`}>
+          <Navbar.Brand className={`${styles.logo}`}>Recipe Realm</Navbar.Brand>
           <div className={styles.menu}>
             {displayNavLinks(0, navItems.length)}
           </div>
@@ -41,7 +39,7 @@ function SiteNavigation() {
               </ul>
             </aside>
           </div>
-        </ul>
+        </Navbar>
       </Container>
     </nav>
   )
