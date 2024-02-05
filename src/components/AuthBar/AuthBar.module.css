@@ -2,6 +2,7 @@
   cursor: pointer;
   font-size: 13px;
   font-weight: 700;
+  color: var(--main-color);
 }
 
 .authItem span {

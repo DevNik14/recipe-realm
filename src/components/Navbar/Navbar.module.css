@@ -6,8 +6,7 @@ li {
 }
 
 .siteNavigation {
-  background-color: #2660A4;
-  color: var(--main-color);
+  background-color: var(--main-bg-nav-color);
 }
 
 .mobileMenuIcon {
@@ -46,15 +45,19 @@ li {
 
 .siteNavigationItems .logo {
   align-self: center;
-  color: var(--main-color)!important;
+  color: var(--main-color);
+}
+
+.siteNavigationItems .logo {
+  pointer-events: none;
 }
 
 .menu {
   display: flex;
 }
 
-.menu .siteNavigationItem {
-  margin: 0 0 0 10px;
+.siteNavigationItem {
+  color: var(--main-color);
 }
 
 @media (width <=768px) {
