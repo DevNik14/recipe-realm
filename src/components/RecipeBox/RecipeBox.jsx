@@ -1,15 +1,19 @@
-import styles from './RecipeBox.module.css';
+import { Card } from 'react-bootstrap';
 
 const RecipeBox = ({ title, description, likes, img }) => {
   return (
-    <article className={styles.trendingRecipeBox}>
-      <div className={styles.recipeContent}>
-        <h3>{title}</h3>
-        <img src={img} alt="img" />
-        <p>{description}</p>
-        <p>likes: {likes}</p>
-      </div>
-    </article>
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src={img} />
+      <Card.Body>
+        <Card.Title>{title}</Card.Title>
+        <Card.Text>
+          {description}
+        </Card.Text>
+        <Card.Text>
+          likes: {likes}
+        </Card.Text>
+      </Card.Body>
+    </Card>
   )
 }
 

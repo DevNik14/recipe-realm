@@ -1,6 +1,5 @@
 import Footer from '../Footer/Footer'
 
-
 const Recipes = () => {
   return (
     <>
