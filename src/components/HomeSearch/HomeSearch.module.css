@@ -1,22 +1,3 @@
 .homeSearch {
   height: 20vh;
-  width: 100vw;
-}
-
-.homeSearchForm {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.homeSearch input {
-  padding: 10px 25px;
-  border-radius: 5px;
-  outline: 0;
-  border: 1px solid var(--main-bg-nav-color);
-  margin-bottom: 15px;
-}
-
-.homeSearch input[type=button] {
-  background-color: #fff;
 }
