@@ -23,12 +23,12 @@ function SiteNavigation() {
   return (
     <header className={styles.siteNavigation}>
       <Container>
-        <AuthBar />
-        <Nav className={`${styles.siteNavigationItems}`}>
+        <Navbar className={`${styles.siteNavigationItems}`}>
           <Navbar.Brand className={`${styles.logo}`}>Recipe Realm</Navbar.Brand>
-          <Navbar className={`${styles.menu} justify-content-end`}>
+          <Nav className={`${styles.menu} justify-content-end`}>
             {displayNavLinks(0, navItems.length)}
-          </Navbar>
+          </Nav>
+          <AuthBar />
           <div className={`${styles.mobileMenuIcon} ${toggleMobileNavigation && styles.open}`} onClick={toggleMobileNavigationHandler}>
             <span></span>
             <span></span>
@@ -41,7 +41,7 @@ function SiteNavigation() {
               </ul>
             </aside>
           </div>
-        </Nav>
+        </Navbar>
       </Container>
     </header>
   )
