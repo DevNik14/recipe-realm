@@ -22,8 +22,8 @@ function SiteNavigation() {
         <Navbar collapseOnSelect expand="lg">
           <Navbar.Brand>Recipe Realm</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="mr-auto">
+          <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
+            <Nav>
               {displayNavLinks(0)}
             </Nav>
           </Navbar.Collapse>
