@@ -1,13 +1,10 @@
-import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import AuthBar from '../AuthBar/AuthBar';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import styles from './Navbar.module.css'
 
 function SiteNavigation() {
-  const [toggleMobileNavigation, setToggleMobileNavigation] = useState(false);
   const navItems = ['Home', 'Recipes', 'Blog'];
-
   const transformHomeLink = (linkText) => linkText == 'Home' ? '/' : linkText;
 
   const displayNavLinks = (from, to) => {
@@ -17,8 +14,6 @@ function SiteNavigation() {
       </Nav.Item>
     })
   }
-
-  const toggleMobileNavigationHandler = () => setToggleMobileNavigation(oldState => !oldState);
 
   return (
     <header className={styles.siteNavigation}>
