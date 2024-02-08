@@ -12,7 +12,7 @@ function SiteNavigation() {
 
   const displayNavLinks = (from, to) => {
     return navItems.slice(from, to).map(item => {
-      return <Nav.Item as="li" key={item}>
+      return <Nav.Item key={item}>
         <NavLink to={transformHomeLink(item)} className={styles.siteNavigationItem}>{item}</NavLink>
       </Nav.Item>
     })
@@ -23,24 +23,15 @@ function SiteNavigation() {
   return (
     <header className={styles.siteNavigation}>
       <Container>
-        <Navbar className={`${styles.siteNavigationItems}`}>
-          <Navbar.Brand className={`${styles.logo}`}>Recipe Realm</Navbar.Brand>
-          <Nav className={`${styles.menu} justify-content-end`}>
-            {displayNavLinks(0, navItems.length)}
-          </Nav>
-          <AuthBar />
-          <div className={`${styles.mobileMenuIcon} ${toggleMobileNavigation && styles.open}`} onClick={toggleMobileNavigationHandler}>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div className={`${styles.mobileNavigation} ${toggleMobileNavigation && styles.open}`}>
-            <aside>
-              <ul className={styles.mobileNavigationItems}>
-                {toggleMobileNavigation && displayNavLinks(0)}
-              </ul>
-            </aside>
-          </div>
+        <AuthBar/>
+        <Navbar collapseOnSelect expand="lg">
+          <Navbar.Brand>Recipe Realm</Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="mr-auto">
+              {displayNavLinks(0)}
+            </Nav>
+          </Navbar.Collapse>
         </Navbar>
       </Container>
     </header>
