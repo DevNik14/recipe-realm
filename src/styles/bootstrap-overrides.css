@@ -1,3 +1,7 @@
 .navbar-brand {
   color: var(--main-color);
 }
+
+.nav-item a{
+  color: var(--main-color);
+}
