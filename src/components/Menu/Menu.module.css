@@ -6,7 +6,3 @@
 .siteNavigationItem:last-child {
   padding-right: 0;
 }
-
-.logo {
-  color: var(--main-color);
-}

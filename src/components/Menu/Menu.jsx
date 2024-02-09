@@ -15,15 +15,15 @@ const Menu = () => {
   }
 
   return (
-    <Navbar collapseOnSelect expand="lg">
-    <Navbar.Brand>Recipe Realm</Navbar.Brand>
-    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-    <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
-      <Nav>
-        {displayNavLinks(0)}
-      </Nav>
-    </Navbar.Collapse>
-  </Navbar>
+    <Navbar collapseOnSelect expand="lg" className={styles.menuContainer}>
+      <Navbar.Brand className={styles.logo}>Recipe Realm</Navbar.Brand>
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
+        <Nav>
+          {displayNavLinks(0)}
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   )
 }
 
