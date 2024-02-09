@@ -9,7 +9,7 @@ const Menu = () => {
   const displayNavLinks = (from, to) => {
     return navItems.slice(from, to).map(item => {
       return <Nav.Item key={item}>
-        <NavLink to={transformHomeLink(item)} className={styles.siteNavigationItem}>{item}</NavLink>
+        <NavLink to={transformHomeLink(item)}>{item}</NavLink>
       </Nav.Item>
     })
   }
