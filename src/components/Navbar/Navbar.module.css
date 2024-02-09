@@ -1,12 +1,3 @@
 .siteNavigation {
   background-color: var(--main-bg-nav-color);
 }
-
-.siteNavigationItem {
-  color: var(--main-color);
-  padding: 0.5rem;
-}
-
-.siteNavigationItem:last-child {
-  padding-right: 0;
-}
