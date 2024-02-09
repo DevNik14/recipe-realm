@@ -15,7 +15,7 @@ const Menu = () => {
   }
 
   return (
-    <Navbar collapseOnSelect expand="lg" className={styles.menuContainer}>
+    <Navbar collapseOnSelect expand="lg" className={styles.menuContainer} data-bs-theme="dark">
       <Navbar.Brand className={styles.logo}>Recipe Realm</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
