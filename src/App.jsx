@@ -6,6 +6,7 @@ import Blog from './components/Blog/Blog';
 import Auth from './components/Auth/Auth';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Recipe from './components/Recipe/Recipe';
 
 function App() {
 
@@ -15,7 +16,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/recipes' element={<Recipes />} />
-        <Route path='/recipes/:recipeId' element={<h2>Single recipe</h2>} />
+        <Route path='/recipes/:recipeId' element={<Recipe />} />
         <Route path='/blog' element={<Blog />} />
         <Route path='/auth' element={<Auth/>} />
       </Routes>
