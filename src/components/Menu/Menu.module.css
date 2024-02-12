@@ -1,8 +1,8 @@
-.siteNavigationItem {
+.menuItem {
   color: var(--main-color);
   padding: 0.5rem;
 }
 
-.siteNavigationItem:last-child {
+.menuItem:last-child {
   padding-right: 0;
 }
