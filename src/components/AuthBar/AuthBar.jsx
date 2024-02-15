@@ -10,6 +10,12 @@ const AuthBar = () => {
           <span>Login / Sign Up</span>
         </NavLink>
       </Nav.Item>
+      <Nav.Item className={`${styles.authItem}`}>
+        <NavLink to='/logout'><span>Profile</span></NavLink>
+      </Nav.Item>
+      <Nav.Item className={`${styles.authItem}`}>
+        <NavLink to='/logout'><span>Logout</span></NavLink>
+      </Nav.Item>
     </Nav>
   )
 }
