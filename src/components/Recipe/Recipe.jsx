@@ -1,3 +1,4 @@
+import Footer from "../Footer/Footer";
 import { Container, Image } from "react-bootstrap";
 
 const Recipe = ({ recipe }) => {
@@ -29,6 +30,7 @@ const Recipe = ({ recipe }) => {
           <li>Ingredient 2: Quantity</li>
         </ul>
       </section>
+      <Footer />
     </Container>
   )
 }
