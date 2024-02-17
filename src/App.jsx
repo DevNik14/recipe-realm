@@ -7,14 +7,25 @@ import Auth from './components/Auth/Auth';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Recipe from './components/Recipe/Recipe';
+import { useEffect, useState } from 'react';
 
 function App() {
-  const recipes = [
-    { id: 1, title: "Recipe Title 1", description: "Some fancy recipe description", likes: 14, img: "../images/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg" },
-    { id: 2, title: "Recipe Title 2", description: "Some fancy recipe description", likes: 14, img: "../images/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg" },
-    { id: 3, title: "Recipe Title 3", description: "Some fancy recipe description", likes: 14, img: "../images/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg" },
-    { id: 4, title: "Recipe Title 4", description: "Some fancy recipe description", likes: 14, img: "../images/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg" }
-  ]
+  const [recipes, setRecipes] = useState([]);
+  useEffect(() => {
+    fetch('http://localhost:3030/data/recipes')
+      .then(res => res.json())
+      .then(data => {
+        setRecipes(data);
+        console.log(recipes);
+      })
+  }, []);
+
+  // const recipes = [
+  //   { id: 1, title: "Recipe Title 1", description: "Some fancy recipe description", likes: 14, img: "../images/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg" },
+  //   { id: 2, title: "Recipe Title 2", description: "Some fancy recipe description", likes: 14, img: "../images/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg" },
+  //   { id: 3, title: "Recipe Title 3", description: "Some fancy recipe description", likes: 14, img: "../images/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg" },
+  //   { id: 4, title: "Recipe Title 4", description: "Some fancy recipe description", likes: 14, img: "../images/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg" }
+  // ]
 
   return (
     <>

@@ -1,13 +1,13 @@
 import { Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-const RecipeBox = ({ id, title, description, likes, img }) => {
+const RecipeBox = ({ _id, name, description, likes, img }) => {
   return (
-    <Link to={`recipes/${id}`}>
+    <Link to={`recipes/${_id}`}>
       <Card style={{ width: '18rem' }}>
         <Card.Img variant="top" src={img} />
         <Card.Body>
-          <Card.Title>{title}</Card.Title>
+          <Card.Title>{name}</Card.Title>
           <Card.Text>
             {description}
           </Card.Text>
