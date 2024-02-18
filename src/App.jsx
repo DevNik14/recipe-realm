@@ -16,7 +16,6 @@ function App() {
       .then(res => res.json())
       .then(data => {
         setRecipes(data);
-        console.log(recipes);
       })
   }, []);
 
@@ -32,7 +31,7 @@ function App() {
       <SiteNavigation />
       <Routes>
         <Route path='/' element={<Home recipes={recipes}/>} />
-        <Route path='/recipes' element={<Recipes recipes={recipes}/>} />
+        <Route path='/recipes' element={<Recipes recipes={recipes} />} />
         <Route path='/recipes/:recipeId' element={<Recipe />} />
         <Route path='/blog' element={<Blog />} />
         <Route path='/auth' element={<Auth/>} />
