@@ -3,8 +3,8 @@ import Footer from "../Footer/Footer";
 import { Container, Image } from "react-bootstrap";
 import { useEffect, useState } from "react";
 
-const Recipe = ({ recipes }) => {
-  const [recipe, setRecipe] = useState({})
+const Recipe = () => {
+  const [recipe, setRecipe] = useState("")
   const { recipeId } = useParams();
 
   useEffect(() => {
@@ -15,36 +15,33 @@ const Recipe = ({ recipes }) => {
 
   return (
     <Container>
-      <header>
-        <h2>{recipe.name}</h2>
-        <Image src="../images/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg" />
-      </header>
+      {recipe && <>
+        <header>
+          <h2>{recipe.name}</h2>
+          <Image src="../images/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg" />
+        </header>
 
-      <section className="recipeInformation">
-        <h2>Recipe Information</h2>
-        <p>Description: Your recipe description goes here.</p>
-        <p>Author: Author Name</p>
-      </section>
+        <section className="recipeInformation">
+          <h2>Recipe Information</h2>
+          <p>Description: Your recipe description goes here.</p>
+          <p>Author: Author Name</p>
+        </section>
 
-      <section className="instructions">
-        <h2>Instructions</h2>
-        {
-          Object.keys(recipe).length > 0 &&
+        <section className="instructions">
+          <h2>Instructions</h2>
           <ol>
             {recipe.steps.map((step, i) => <li key={i}>{step}</li>)}
           </ol>
-        }
-      </section>
+        </section>
 
-      <section className="ingredients">
-        <h2>Ingredients</h2>
-        {Object.keys(recipe).length > 0 &&
+        <section className="ingredients">
+          <h2>Ingredients</h2>
           <ul>
             {recipe.ingredients.map(ingredient => <li key={ingredient}>{ingredient}</li>)}
           </ul>
-        }
-      </section>
-      <Footer />
+        </section>
+        <Footer />
+      </>}
     </Container>
   )
 }
