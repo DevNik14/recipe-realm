@@ -1,20 +1,16 @@
 import styles from './HomeSearch.module.css'
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
+import { Form, Button, Row, Col } from 'react-bootstrap';
 
 const HomeSearch = () => {
   return (
-    <div className={`${styles.homeSearch}`}>
-      <Form>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Email address</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" />
-        </Form.Group>
+    <section className={`${styles.homeSearch}`}>
+      <Form.Group className="mb-3" as={Col} lg={6}>
+        <Form.Control type="email" placeholder="Search through all recipes" />
         <Button variant="primary">
           Search
         </Button>
-      </Form>
-    </div>
+      </Form.Group>
+    </section>
   )
 }
 
