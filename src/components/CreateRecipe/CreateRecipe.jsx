@@ -10,7 +10,7 @@ const CreateRecipe = () => {
         {/* Recipe Information Section */}
         <Row>
           <Form.Group className="mb-3" controlId="recipeTitle" as={Col} xs={12} lg={4}>
-            <Form.Label>Recipe Title</Form.Label>
+            <Form.Label>Recipe Title*</Form.Label>
             <Form.Control placeholder="Recipe Title" />
           </Form.Group>
         </Row>

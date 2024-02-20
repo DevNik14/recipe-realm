@@ -14,9 +14,6 @@ const AuthBar = () => {
         <NavLink to='/profile'><span>Profile</span></NavLink>
       </Nav.Item>
       <Nav.Item className={`${styles.authItem}`}>
-        <NavLink to='/create-recipe'><span>Create Recipe</span></NavLink>
-      </Nav.Item>
-      <Nav.Item className={`${styles.authItem}`}>
         <NavLink><span>Logout</span></NavLink>
       </Nav.Item>
     </Nav>
