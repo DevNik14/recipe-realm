@@ -1,14 +1,16 @@
+import { useEffect, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
+
 import Home from './components/Home/Home';
 import Recipes from './components/Recipes/Recipes';
 import SiteNavigation from './components/Navbar/Navbar';
 import Blog from './components/Blog/Blog';
 import Auth from './components/Auth/Auth';
+import Recipe from './components/Recipe/Recipe';
+import CreateRecipe from './components/CreateRecipe/CreateRecipe';
+
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Recipe from './components/Recipe/Recipe';
-import { useEffect, useState } from 'react';
-import CreateRecipe from './components/CreateRecipe/CreateRecipe';
 
 function App() {
   const [recipes, setRecipes] = useState([]);
