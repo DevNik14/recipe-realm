@@ -8,6 +8,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Recipe from './components/Recipe/Recipe';
 import { useEffect, useState } from 'react';
+import CreateRecipe from './components/CreateRecipe/CreateRecipe';
 
 function App() {
   const [recipes, setRecipes] = useState([]);
@@ -35,6 +36,7 @@ function App() {
         <Route path='/recipes/:recipeId' element={<Recipe />} />
         <Route path='/blog' element={<Blog />} />
         <Route path='/auth' element={<Auth/>} />
+        <Route path='/create-recipe' element={CreateRecipe} />
       </Routes>
     </>
   )
