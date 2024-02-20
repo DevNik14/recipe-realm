@@ -11,6 +11,7 @@ import CreateRecipe from './components/CreateRecipe/CreateRecipe';
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import UserProfile from './components/UserProfile/UserProfile';
 
 function App() {
   const [recipes, setRecipes] = useState([]);
@@ -39,6 +40,7 @@ function App() {
         <Route path='/blog' element={<Blog />} />
         <Route path='/auth' element={<Auth/>} />
         <Route path='/create-recipe' element={<CreateRecipe />} />
+        <Route path='/profile' element={<UserProfile />} />
       </Routes>
     </>
   )
