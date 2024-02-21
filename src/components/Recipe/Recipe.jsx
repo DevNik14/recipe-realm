@@ -1,7 +1,7 @@
-import { useParams } from "react-router-dom";
-import Footer from "../Footer/Footer";
-import { Container, Image } from "react-bootstrap";
 import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { Container, Image, Row, Col, ListGroup } from "react-bootstrap";
+import Footer from "../Footer/Footer";
 
 const Recipe = () => {
   const [recipe, setRecipe] = useState("")
@@ -16,9 +16,20 @@ const Recipe = () => {
   return (
     <Container>
       {recipe && <>
-        <header>
-          <h2>{recipe.name}</h2>
-          <Image src="../images/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg" />
+        <header className="mt-20">
+          <Row>
+            <Col className="recipeDetails" sm={12} lg={6}>
+              <h2>{recipe.name}</h2>
+              <ListGroup horizontal>
+                <ListGroup.Item>Ingredients</ListGroup.Item>
+                <ListGroup.Item>Minutes</ListGroup.Item>
+                <ListGroup.Item>Calories</ListGroup.Item>
+              </ListGroup>
+            </Col>
+            <Col sm={12} lg={6}>
+              <Image src="../images/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg" />
+            </Col>
+          </Row>
         </header>
 
         <section className="recipeInformation">
