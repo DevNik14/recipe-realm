@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Container, Image, Row, Col, ListGroup } from "react-bootstrap";
 import Footer from "../Footer/Footer";
+import styles from './Recipe.module.css'
 
 const Recipe = () => {
   const [recipe, setRecipe] = useState("")
@@ -27,7 +28,7 @@ const Recipe = () => {
               </ListGroup>
             </Col>
             <Col sm={12} lg={6}>
-              <Image src="../images/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg" />
+              <Image src="../images/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg" className={`${styles.recipeDetailsImage}`}/>
             </Col>
           </Row>
         </header>
