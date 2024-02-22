@@ -1,0 +1,8 @@
+svg {
+  cursor: pointer;
+  width: 84px;
+}
+
+svg.rated path {
+  fill: #FACC15;
+}
