@@ -2,14 +2,11 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Container, Image, Row, Col, ListGroup } from "react-bootstrap";
 import Footer from "../Footer/Footer";
-import Star from "../Star/Star";
+import StarsContainer from "../StarsContainer/StarsContainer";
 import styles from './Recipe.module.css'
 
 const Recipe = () => {
   const [recipe, setRecipe] = useState("");
-  const [showStars, setShowStars] = useState(5);
-  const [stars, setStars] = useState(showStars);
-  const [starIndex, setStarIndex] = useState(-1);
   const { recipeId } = useParams();
 
   useEffect(() => {
@@ -18,10 +15,6 @@ const Recipe = () => {
       .then(data => setRecipe(data))
   }, [])
 
-  const ratingHandler = (index, e) => {
-    setStarIndex(oldIndex => index)
-  }
-
   return (
     <Container>
       {recipe && <>
@@ -29,11 +22,7 @@ const Recipe = () => {
           <Row>
             <Col className="recipeDetails" sm={12} lg={6}>
               <h2>{recipe.name}</h2>
-              <ul className='starsContainer'>
-                {Array.from({ length: stars }, (_, index) => (
-                  <Star key={index} ratingHandler={ratingHandler.bind(null, index)} selectedStarIndex={starIndex} currentStarIndex={index} />
-                ))}
-              </ul>
+              <StarsContainer />
               <ListGroup horizontal>
                 <ListGroup.Item>Ingredients</ListGroup.Item>
                 <ListGroup.Item>Minutes</ListGroup.Item>
