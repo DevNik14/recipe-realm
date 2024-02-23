@@ -12,7 +12,6 @@ const Star = (props) => {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         onClick={props.ratingHandler}
-        onMouseEnter={props.ratingHandler}
         className={styles[className]}
       >
         <g clipPath="url(#clip0_1_139)">

@@ -28,6 +28,7 @@ const Recipe = () => {
                 <ListGroup.Item>Minutes</ListGroup.Item>
                 <ListGroup.Item>Calories</ListGroup.Item>
               </ListGroup>
+              
             </Col>
             <Col sm={12} lg={6}>
               <Image src="../images/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg" className={`${styles.recipeDetailsImage}`} />
