@@ -18,7 +18,7 @@ const Recipe = () => {
   return (
     <Container>
       {recipe && <>
-        <header className="mt-20">
+        <header className="mt-5">
           <Row>
             <Col className="recipeDetails" sm={12} lg={6}>
               <h2>{recipe.name}</h2>
@@ -31,10 +31,12 @@ const Recipe = () => {
               
             </Col>
             <Col sm={12} lg={6}>
-              <Image src="../images/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg" className={`${styles.recipeDetailsImage}`} />
+              <Image src="../images/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg" className={`${styles.recipeDetailsImage} rounded-4`}/>
             </Col>
           </Row>
         </header>
+
+        <hr className="my-5" />
 
         <section className="recipeInformation">
           <h2>Recipe Information</h2>
@@ -42,18 +44,22 @@ const Recipe = () => {
           <p>Author: Author Name</p>
         </section>
 
-        <section className="instructions">
-          <h2>Instructions</h2>
-          <ol>
-            {recipe.steps.map((step, i) => <li key={i}>{step}</li>)}
-          </ol>
-        </section>
+        <hr className="my-5" />
 
         <section className="ingredients">
           <h2>Ingredients</h2>
           <ul>
             {recipe.ingredients.map(ingredient => <li key={ingredient}>{ingredient}</li>)}
           </ul>
+        </section>
+
+        <hr className="my-5" />
+
+        <section className="instructions">
+          <h2>Instructions</h2>
+          <ol>
+            {recipe.steps.map((step, i) => <li key={i}>{step}</li>)}
+          </ol>
         </section>
         <Footer />
       </>}
