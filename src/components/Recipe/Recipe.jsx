@@ -24,14 +24,23 @@ const Recipe = () => {
               <h2>{recipe.name}</h2>
               <StarsContainer />
               <ListGroup horizontal>
-                <ListGroup.Item>Ingredients</ListGroup.Item>
-                <ListGroup.Item>Minutes</ListGroup.Item>
-                <ListGroup.Item>Calories</ListGroup.Item>
+                <ListGroup.Item className="text-center">
+                  <div>16</div>
+                  <div>Ingredients</div>
+                </ListGroup.Item>
+                <ListGroup.Item className="text-center">
+                  <div>60</div>
+                  <div>Minutes</div>
+                </ListGroup.Item>
+                <ListGroup.Item className="text-center">
+                  <div>650</div>
+                  <div>Calories</div>
+                </ListGroup.Item>
               </ListGroup>
-              
+
             </Col>
             <Col sm={12} lg={6}>
-              <Image src="../images/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg" className={`${styles.recipeDetailsImage} rounded-4`}/>
+              <Image src="../images/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg" className={`${styles.recipeDetailsImage} rounded-4`} />
             </Col>
           </Row>
         </header>
