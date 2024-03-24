@@ -16,7 +16,6 @@ import UserProfile from './components/UserProfile/UserProfile';
 function App() {
   const [recipes, setRecipes] = useState([]);
   useEffect(() => {
-    console.log('test');
     fetch('http://localhost:3030/data/recipes')
       .then(res => res.json())
       .then(data => {
