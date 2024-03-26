@@ -1,8 +1,0 @@
-.addTo span {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.addTo span:last-child {
-  margin-left: 10px;
-}
