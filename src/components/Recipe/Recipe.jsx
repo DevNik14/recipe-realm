@@ -6,14 +6,18 @@ import StarsContainer from "../StarsContainer/StarsContainer";
 import styles from './Recipe.module.css'
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
-const Recipe = () => {
+const Recipe = ({recipes}) => {
   const [recipe, setRecipe] = useState("");
   const { recipeId } = useParams();
 
+  // useEffect(() => {
+  //   fetch(`http://localhost:3030/data/recipes/${recipeId}`)
+  //     .then(res => res.json())
+  //     .then(data => setRecipe(data))
+  // }, [])
   useEffect(() => {
-    fetch(`http://localhost:3030/data/recipes/${recipeId}`)
-      .then(res => res.json())
-      .then(data => setRecipe(data))
+    const foundRecipe = recipes.find(recipe => recipe._id == recipeId);
+    setRecipe(foundRecipe);
   }, [])
 
   return (
@@ -66,21 +70,21 @@ const Recipe = () => {
 
         <hr className="my-5" />
 
-        <section className="ingredients">
+        {/* <section className="ingredients">
           <h2>Ingredients</h2>
           <ul>
             {recipe.ingredients.map(ingredient => <li key={ingredient}><i className="bi bi-plus"></i> {ingredient}</li>)}
           </ul>
-        </section>
+        </section> */}
 
         <hr className="my-5" />
 
-        <section className="instructions">
+        {/* <section className="instructions">
           <h2>Instructions</h2>
           <ol>
             {recipe.steps.map((step, i) => <li key={i}>{step}</li>)}
           </ol>
-        </section>
+        </section> */}
         <Footer />
       </>}
     </Container>
