@@ -24,10 +24,10 @@ function App() {
   // }, []);
 
   const recipes = [
-    { id: 1, title: "Recipe Title 1", description: "Some fancy recipe description", likes: 14, img: "../images/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg" },
-    { id: 2, title: "Recipe Title 2", description: "Some fancy recipe description", likes: 14, img: "../images/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg" },
-    { id: 3, title: "Recipe Title 3", description: "Some fancy recipe description", likes: 14, img: "../images/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg" },
-    { id: 4, title: "Recipe Title 4", description: "Some fancy recipe description", likes: 14, img: "../images/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg" }
+    { _id: 1, name: "Recipe Title 1", description: "Some fancy recipe description", likes: 14, img: "../images/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg" },
+    { _id: 2, name: "Recipe Title 2", description: "Some fancy recipe description", likes: 14, img: "../images/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg" },
+    { _id: 3, name: "Recipe Title 3", description: "Some fancy recipe description", likes: 14, img: "../images/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg" },
+    { _id: 4, name: "Recipe Title 4", description: "Some fancy recipe description", likes: 14, img: "../images/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg" }
   ]
 
   return (
@@ -36,7 +36,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home recipes={recipes}/>} />
         <Route path='/recipes' element={<Recipes recipes={recipes} />} />
-        <Route path='/recipes/:recipeId' element={<Recipe />} />
+        <Route path='/recipes/:recipeId' element={<Recipe recipes={recipes}/>} />
         <Route path='/blog' element={<Blog />} />
         <Route path='/auth' element={<Auth/>} />
         <Route path='/create-recipe' element={<CreateRecipe />} />
