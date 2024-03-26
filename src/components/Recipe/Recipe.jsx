@@ -17,7 +17,9 @@ const Recipe = ({recipes}) => {
   // }, [])
   useEffect(() => {
     const foundRecipe = recipes.find(recipe => recipe._id == recipeId);
-    setRecipe(foundRecipe);
+    if(foundRecipe) {
+      setRecipe(foundRecipe);
+    }
   }, [])
 
   return (
