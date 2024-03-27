@@ -1,5 +1,5 @@
 import { useState } from "react";;
-import Star from "../Star/Star";
+import Star from "./Star/Star";
 import styles from './StarsContainer.module.css';
 
 const StarsContainer = () => {
