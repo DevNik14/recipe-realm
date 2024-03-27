@@ -2,7 +2,7 @@ const Intro = () => {
   return (
     <div className="intro">
       <figure className="bg">
-        <img src="images/intro.jpg" alt="" />
+        <img src="../../assets/images/intro.jpg" alt="" />
       </figure>
       {/*wrap*/}
       <div className="wrap clearfix">
